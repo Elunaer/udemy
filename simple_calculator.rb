@@ -1,5 +1,5 @@
 puts "
-Hello, I am a simple calculator. I will ask you for two numbers and an operator for the mathmatical problem you'd like to solve. To see all possible operator results just type yes at the end!
+Hello, I am a simple calculator. I will ask you for two numbers and an operator for the mathematical problem you'd like to solve. To see all possible operator results just type yes at the end!
 "
 def get_number
     string = gets.chomp
