@@ -100,7 +100,7 @@ def modulo(number_one, number_two)
 end
 
 def return_results(number_one, number_two)
-    puts "Would you like to see all the mathmatical results?"
+    puts "Would you like to see all the mathematical results?"
     yes_or_no = gets.chomp.downcase
     if yes_or_no == "yes"
         puts "Division: #{number_one} / #{number_two} = #{divide(number_one, number_two)}"
