@@ -9,6 +9,7 @@ complete Ruby on Rails developer course.
 
 ### Homework assignments 
 * [X] Simple Calculator
+* [X] Authenticator
 
 ### Simple Calculator 
 My task was to: 
@@ -35,4 +36,27 @@ then you can enter any number you like including float numbers
 ```
 10.56
 ```
+### Authenticator (command line) 
+My task was to: 
 
+Create a basic authenticator in command line. The authenticator should ask for a username and password and then return the original hash to them. I added some basic details in for each user so it didn't just return the username and password - mainly because they have just entered their username and password so for it to just return that would be strange!
+
+To use the authenticator just open your terminal and then:
+```
+ruby homework_authenticator.rb
+```
+
+It should then look something like this:
+```
+I am a basic authenticator, I will ask you for your username and password and then return the information I have stored for you.
+Please enter a username
+```
+You can choose from "user" then a number (ie user1) between user1 and user5, then the password is just "password" with the matching number on the end.
+
+Try it and then see what information you get back!
+```
+Please enter a username
+user1
+Please enter a password
+password1
+```
