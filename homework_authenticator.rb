@@ -48,7 +48,7 @@ while user_attempt < 4
     end
     abort(
         "Your username is #{authentication[:username]}. Your password is #{authentication[:password]} \n
-        The information we have in our file about you is: \n
+        The information we have in our file for you is: \n
         Name: #{authentication[:name]} \n
         DOB: #{authentication[:dob]} \n
         Address: #{authentication[:address]} \n
