@@ -10,7 +10,7 @@ complete Ruby on Rails developer course.
 ### Homework assignments 
 * [X] Simple Calculator
 * [X] Authenticator
-* [ ] Area Code Dictionary
+* [x] Area Code Dictionary
 
 ### Simple Calculator 
 My task was to: 
