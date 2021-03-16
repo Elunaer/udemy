@@ -1,3 +1,4 @@
+#Our theoretical database
 @telephone_book = [
   { area: "Leeds", code: "0113" },
   { area: "Sheffield", code: "0114" },
@@ -16,35 +17,23 @@
   { area: "Rhyl", code: "01745" },
 ]
 
-def initialise
-  puts "Thanks for using our Telephone book today, Would you like to find an area telephone code today?"
-  areas_or_code
+#I separated this from start because it was repeating the whole thing each time user entered an incorrect input
+def information
+  puts "Thanks for using our Telephone book today. Our service is available to find an area/city by its telephone code or to find a telephone code by entering a city/area."
+  start
 end
 
-def areas_or_code
+def start
+  puts "Would you like to enter an area or code today? Type: \"Area\" or \"Code\""
   input = gets.chomp.downcase
-  if input == "yes"
+  if input == "code"
+    by_code 
+  elsif input == "area"
     by_area
-  elsif input == "no"
-    puts "Would you like to find an area by using a telephone code?"
-    input = gets.chomp.downcase
-    if input == "yes"
-      by_code
-    else
-      puts "You haven't entered anything so I will return you to the main menu"
-      initialise
-    end
-  else
-    puts "You seem to have not entered anything, try again please!"
-    areas_or_code
+  else 
+    puts "Sorry I did not understand your input please try again"
+    start
   end
-end
-
-def by_area
-  puts "We have the following areas on file:"
-  list_areas
-  puts "Which area would you like the telephone code for? Please enter one of the areas listed above"
-  get_areas
 end
 
 def by_code
@@ -54,67 +43,53 @@ def by_code
   get_codes
 end
 
-
-def get_areas
-  input = gets.chomp.capitalize
-  area = @telephone_book.find {|area| area[:area] == input}
-  if area
-    puts "The telephone code for #{area[:area]} is #{area[:code]}"
-    another_input_areas
-  else
-    puts "Sorry your entered the wrong area, please try again"
-    get_areas
-  end
-end
-
-def get_codes
-  input = gets.chomp
-  code = @telephone_book.find {|code| code[:code] == input}
-  if code
-    puts "The area for #{code[:code]} telephone code is #{code[:area]}"
-    another_input_codes
-  else
-    puts "Sorry your entered the wrong telephone code, please try again"
-    get_codes
-  end
-end
-
-def list_areas
-  puts @telephone_book.map {|key| key[:area]}
+def by_area
+  puts "We have the following areas on file:"
+  list_areas
+  puts "Which area would you like the telephone code for? Please enter one of the areas listed above"
+  get_areas
 end
 
 def list_codes
   puts @telephone_book.map {|key| key[:code]}
 end
 
-def another_input_codes
-  puts "Would you like to enter another telephone code?"
-  input = gets.chomp.downcase
-  if input == "yes"
-    puts "Ok, so which telephone code would you like to know the area for?"
+def list_areas
+  puts @telephone_book.map {|key| key[:area]}
+end
+
+def get_codes
+  input = gets.chomp
+  code = @telephone_book.find {|code| code[:code] == input}
+  if code
+    puts "You entered telephone code: #{code[:code]}. The area for this telephone code is #{code[:area]}"
+    puts "If you'd like to enter another telephone code then enter it now otherwise type exit to quit"
     get_codes
-  elsif input == "no"
-    abort("Great, thank you for using our free service today hope you have a nice day!")
+  elsif input.downcase  == "exit"
+    abort_message
   else
-    puts "Sorry I don't understand, please type yes or no"
-    another_input_codes
+    puts "Sorry your entered the wrong telephone code, please try again"
+    get_codes
   end
 end
 
-def another_input_areas
-  puts "Would you like to enter another area? Please type yes or no"
-  input = gets.chomp.downcase
-  if input == "yes"
-    puts "Ok, so which area would you like to know the telephone code for?"
+def get_areas
+  input = gets.chomp.capitalize
+  area = @telephone_book.find {|area| area[:area] == input}
+  if area
+    puts "You entered #{input}. The telephone code for #{area[:area]} is #{area[:code]}"
+    puts "If you'd like to enter another area then enter it now otherwise type exit to quit"
     get_areas
-  elsif input == "no"
-    abort("Great, thank you for using our free service today hope you have a nice day!")
+  elsif input.downcase == "exit" 
+    abort_message
   else
-    puts "Sorry I don't understand, please type yes or no"
-    another_input_areas
+    puts "Sorry your entered the wrong area, please try again"
+    get_areas
   end
 end
 
-initialise
+def abort_message
+	abort("Thanks for using our service today it was a pleasure to help you, have a great day!")
+end
 
-
+information

@@ -86,21 +86,12 @@ ruby area_code_dictionary.rb
 
 It should then look something like this:
 ```
-Thanks for using our Telephone book today, Would you like to find an area telephone code today?
-```
+Thanks for using our Telephone book today. Our service is available to find an area/city by its telephone code or to find a telephone code by entering a city/area.
 
-You can type yes, no or leave it blank. Leaving it blank will error, yes will give you the following:
-```
-We have the following areas on file:
-Leeds
-Sheffield
-...
-```
-if you type no it will ask you
+Would you like to enter an area or code today? Type: "Area" or "Code"
 
 ```
-Would you like to find an area by using a telephone code?
+You can type area, code or leave it blank. Leaving it blank will error and prompt you to try again
 
-```
-
-I'm not really happy with the names of my methods but I will work on that as a I progress.
+### Update
+I updated the file to ask whether you would like to enter a code or area to streamline the code and tried to follow DRY. 
