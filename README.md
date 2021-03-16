@@ -10,6 +10,7 @@ complete Ruby on Rails developer course.
 ### Homework assignments 
 * [X] Simple Calculator
 * [X] Authenticator
+* [ ] Area Code Dictionary
 
 ### Simple Calculator 
 My task was to: 
@@ -60,3 +61,46 @@ user1
 Please enter a password
 password1
 ```
+### Area code dictionary (command line) 
+My task was to: 
+
+1. Create a dictionary (hash) with 10 city names, where the city name (key) will be a string, and the area code would be the value, an example is given in the resources in the project video
+
+2. Display the city names to the user for cities which are available in the dictionary
+
+3. Get input from the user on the city name (hint: use gets.chomp method)
+
+4. Display area code based on user's city choice
+
+5. Loop - keep the program running and prompt the user for new city names to lookup
+
+6. Complete the two methods to lookup city names and to find area code based on city names
+
+I chose not to use "loop" because I don't think it would have been the most effective way considering I chose to also allow the user to enter in
+a telephone code to find a city/area as well as what was asked.
+
+To use the area code dictionary just open your terminal and then:
+```
+ruby area_code_dictionary.rb
+```
+
+It should then look something like this:
+```
+Thanks for using our Telephone book today, Would you like to find an area telephone code today?
+```
+
+You can type yes, no or leave it blank. Leaving it blank will error, yes will give you the following:
+```
+We have the following areas on file:
+Leeds
+Sheffield
+...
+```
+if you type no it will ask you
+
+```
+Would you like to find an area by using a telephone code?
+
+```
+
+I'm not really happy with the names of my methods but I will work on that as a I progress.
