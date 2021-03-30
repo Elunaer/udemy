@@ -107,7 +107,7 @@ I updated the file to ask whether you would like to enter a code or area to stre
 
 In my course on udemy we were told to go and practice the things we have learned so far. So I decided to make a command line blackjack game. I
 probably over complicated things a little by doing this so early on because it took a lot of brain power to work out all of the intersections with methods linking to others
-and "aaarghh". However, I did have loads of fun making this.
+and "aaarghh". However, I did have loads of fun making this. It did take me a while to write it hence the gap in my commit history!
 
 So to play the game just open your terminal:
 ```
