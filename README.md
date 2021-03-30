@@ -10,10 +10,10 @@ complete Ruby on Rails developer course.
 ### Homework assignments 
 * [X] Simple Calculator
 * [X] Authenticator
-* [x] Area Code Dictionary
+* [X] Area Code Dictionary
 
 ### Personal Assignments (To solidify knowledge I have learned)
-* [ ] Command line Blackjack
+* [X] Command line Blackjack
 
 ## Homework assignments information
 
