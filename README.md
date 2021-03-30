@@ -12,6 +12,11 @@ complete Ruby on Rails developer course.
 * [X] Authenticator
 * [x] Area Code Dictionary
 
+### Personal Assignments (To solidify knowledge I have learned)
+* [ ] Command line Blackjack
+
+## Homework assignments information
+
 ### Simple Calculator 
 My task was to: 
 
@@ -95,3 +100,23 @@ You can type area, code or leave it blank. Leaving it blank will error and promp
 
 ### Update
 I updated the file to ask whether you would like to enter a code or area to streamline the code and tried to follow DRY. 
+
+## Personal projects
+
+### Command line Blackjack
+
+In my course on udemy we were told to go and practice the things we have learned so far. So I decided to make a command line blackjack game. I
+probably over complicated things a little by doing this so early on because it took a lot of brain power to work out all of the intersections with methods linking to others
+and "aaarghh". However, I did have loads of fun making this.
+
+So to play the game just open your terminal:
+```
+ruby blackjack.rb
+```
+I have made an in game currency of £100 to start things off. You can bet any amount as long as it's a whole number. If you enter a float number it will just round down
+(ie if you enter 20.5 it will only bet £20). It works just like a normal blackjack game where the dealer and player are given 2 cards each. Your aim is to get as closeto 21
+without going bust and beating the computers score. Each card has a value. J, Q & K have a value of 10, Ace has a value of either 11 or 1 depending on your card value at the
+time and then numbers 2 through 10 represent themselves. You can choose to stay at any point and the dealer has to get to a minimum card value of 17 before choosing to stay. The 
+only issue being is that because it's very basic and not completely random if a dealers cards are at the value of 17 then they will always stay.
+
+If you win a round you will get double your bet, if you lose you lose the bet you placed. It'd just meant to be a little bit of fun so try it out!
