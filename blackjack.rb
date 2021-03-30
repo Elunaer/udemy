@@ -180,7 +180,7 @@ def dealer_turn
 		continue_playing
 	end
 end
-
+  
 def continue_playing
 	if @currency == 0
 		abort("You've ran out of money this time, I think we'll call it quits, come back another time!")
