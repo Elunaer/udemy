@@ -22,7 +22,7 @@ My task was to:
 
 Create a simple calculator that takes in 2 numbers and then returns the multiplication, division, addition and subtraction of the numbers entered. I decided to 
 add a few things of my own just to make it a little more user friendly. Including a couple of validation checks. I'm sure there are better ways to do it but this is what I ended 
-up with and I'm pretty happy with it. Originally as the assignement was set it asked that you entered 2 whole numbers, there were no checks needed to be made for whether what was entered was a number, letter etc
+up with and I'm pretty happy with it. Originally as the assignment was set it asked that you entered 2 whole numbers, there were no checks needed to be made for whether what was entered was a number, letter etc
 and for the part where you would select the operator the homework was to create a list (ie for multiplication press 1 and so on) so I decided to add the proper operator  
 checks and then I also added some checks for decimal points as well which wasn't required. 
 
@@ -114,7 +114,7 @@ So to play the game just open your terminal:
 ruby blackjack.rb
 ```
 I have made an in game currency of £100 to start things off. You can bet any amount as long as it's a whole number. If you enter a float number it will just round down
-(ie if you enter 20.5 it will only bet £20). It works just like a normal blackjack game where the dealer and player are given 2 cards each. Your aim is to get as closeto 21
+(ie if you enter 20.5 it will only bet £20). It works just like a normal blackjack game where the dealer and player are given 2 cards each. Your aim is to get as close to 21
 without going bust and beating the computers score. Each card has a value. J, Q & K have a value of 10, Ace has a value of either 11 or 1 depending on your card value at the
 time and then numbers 2 through 10 represent themselves. You can choose to stay at any point and the dealer has to get to a minimum card value of 17 before choosing to stay. The 
 only issue being is that because it's very basic and not completely random if a dealers cards are at the value of 17 then they will always stay.
