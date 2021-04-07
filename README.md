@@ -7,12 +7,15 @@ complete Ruby on Rails developer course.
 * [ ] Stock Tracker Social media app 
 * [ ] Project management app 
 
-### Homework assignments 
+### Homework assignments
+[Jump to Homework assignments](#homework-assignments-information)
 * [X] Simple Calculator
 * [X] Authenticator
 * [X] Area Code Dictionary
+* [X] bCrypt assignment
 
-### Personal Assignments (To solidify knowledge I have learned)
+### Personal Assignments
+[Jump to Personal assignments](#personal-assignments-information)
 * [X] Command line Blackjack
 
 ## Homework assignments information
@@ -101,7 +104,15 @@ You can type area, code or leave it blank. Leaving it blank will error and promp
 ### Update
 I updated the file to ask whether you would like to enter a code or area to streamline the code and tried to follow DRY. 
 
-## Personal projects
+### bCrypt Assignment
+The idea behind the bCrypt assignment was to show the use of classes and modules because we haven't worked with those
+before. So it was just a really basic task to show the use of the bCrypt gem and how that worked along with showing us a
+very basic way for us to use Classes and modules. 
+
+I also added my own little spin on the task assigned to us by taking the list of users and their information
+from our homework assignment "authenticator" and reused their information.
+
+## Personal Assignments Information
 
 ### Command line Blackjack
 
